@@ -6,6 +6,8 @@
 **SIH 2026 Problem Statement:** SIH 26159 — *AI-Assisted Cryptographic Security Posture Assessment for Secure Email Communications*  
 **Organization:** National Technical Research Organisation (NTRO)  
 **Category:** Software | Cybersecurity  
+**Team Name:** Neurolix  
+**Team ID:** 141037  
 
 ---
 
