@@ -1,0 +1,11 @@
+{
+  "scenario_id": "SECU-16",
+  "category": "Secure",
+  "protocol": "IMAP",
+  "client_ip": "192.168.1.26",
+  "server_ip": "10.0.0.25",
+  "server_port": 143,
+  "expected_findings": [],
+  "expected_confidence": "DIRECT",
+  "pcap_file": "SECU-16.pcap"
+}

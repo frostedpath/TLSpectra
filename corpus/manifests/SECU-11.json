@@ -1,0 +1,11 @@
+{
+  "scenario_id": "SECU-11",
+  "category": "Secure",
+  "protocol": "SMTP",
+  "client_ip": "192.168.1.21",
+  "server_ip": "10.0.0.25",
+  "server_port": 587,
+  "expected_findings": [],
+  "expected_confidence": "DIRECT",
+  "pcap_file": "SECU-11.pcap"
+}

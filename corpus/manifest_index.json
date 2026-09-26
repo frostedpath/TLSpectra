@@ -1,0 +1,2014 @@
+{
+  "total_sessions": 150,
+  "category_distribution": {
+    "Secure": 25,
+    "Legacy": 25,
+    "Certificate": 25,
+    "STARTTLS/STLS": 25,
+    "Behavioural": 25,
+    "Malformed": 25
+  },
+  "demo_pcap": "securemailscope_demo_corpus.pcap",
+  "manifests": [
+    {
+      "scenario_id": "SECU-01",
+      "category": "Secure",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.11",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-01.pcap"
+    },
+    {
+      "scenario_id": "SECU-02",
+      "category": "Secure",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.12",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-02.pcap"
+    },
+    {
+      "scenario_id": "SECU-03",
+      "category": "Secure",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.13",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-03.pcap"
+    },
+    {
+      "scenario_id": "SECU-04",
+      "category": "Secure",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.14",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-04.pcap"
+    },
+    {
+      "scenario_id": "SECU-05",
+      "category": "Secure",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.15",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-05.pcap"
+    },
+    {
+      "scenario_id": "SECU-06",
+      "category": "Secure",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.16",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-06.pcap"
+    },
+    {
+      "scenario_id": "SECU-07",
+      "category": "Secure",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.17",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-07.pcap"
+    },
+    {
+      "scenario_id": "SECU-08",
+      "category": "Secure",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.18",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-08.pcap"
+    },
+    {
+      "scenario_id": "SECU-09",
+      "category": "Secure",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.19",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-09.pcap"
+    },
+    {
+      "scenario_id": "SECU-10",
+      "category": "Secure",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.20",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-10.pcap"
+    },
+    {
+      "scenario_id": "SECU-11",
+      "category": "Secure",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.21",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-11.pcap"
+    },
+    {
+      "scenario_id": "SECU-12",
+      "category": "Secure",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.22",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-12.pcap"
+    },
+    {
+      "scenario_id": "SECU-13",
+      "category": "Secure",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.23",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-13.pcap"
+    },
+    {
+      "scenario_id": "SECU-14",
+      "category": "Secure",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.24",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-14.pcap"
+    },
+    {
+      "scenario_id": "SECU-15",
+      "category": "Secure",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.25",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-15.pcap"
+    },
+    {
+      "scenario_id": "SECU-16",
+      "category": "Secure",
+      "protocol": "IMAP",
+      "client_ip": "192.168.1.26",
+      "server_ip": "10.0.0.25",
+      "server_port": 143,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-16.pcap"
+    },
+    {
+      "scenario_id": "SECU-17",
+      "category": "Secure",
+      "protocol": "IMAP",
+      "client_ip": "192.168.1.27",
+      "server_ip": "10.0.0.25",
+      "server_port": 143,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-17.pcap"
+    },
+    {
+      "scenario_id": "SECU-18",
+      "category": "Secure",
+      "protocol": "IMAP",
+      "client_ip": "192.168.1.28",
+      "server_ip": "10.0.0.25",
+      "server_port": 143,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-18.pcap"
+    },
+    {
+      "scenario_id": "SECU-19",
+      "category": "Secure",
+      "protocol": "IMAP",
+      "client_ip": "192.168.1.29",
+      "server_ip": "10.0.0.25",
+      "server_port": 143,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-19.pcap"
+    },
+    {
+      "scenario_id": "SECU-20",
+      "category": "Secure",
+      "protocol": "IMAP",
+      "client_ip": "192.168.1.30",
+      "server_ip": "10.0.0.25",
+      "server_port": 143,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-20.pcap"
+    },
+    {
+      "scenario_id": "SECU-21",
+      "category": "Secure",
+      "protocol": "POP3",
+      "client_ip": "192.168.1.31",
+      "server_ip": "10.0.0.25",
+      "server_port": 110,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-21.pcap"
+    },
+    {
+      "scenario_id": "SECU-22",
+      "category": "Secure",
+      "protocol": "POP3",
+      "client_ip": "192.168.1.32",
+      "server_ip": "10.0.0.25",
+      "server_port": 110,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-22.pcap"
+    },
+    {
+      "scenario_id": "SECU-23",
+      "category": "Secure",
+      "protocol": "POP3",
+      "client_ip": "192.168.1.33",
+      "server_ip": "10.0.0.25",
+      "server_port": 110,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-23.pcap"
+    },
+    {
+      "scenario_id": "SECU-24",
+      "category": "Secure",
+      "protocol": "POP3",
+      "client_ip": "192.168.1.34",
+      "server_ip": "10.0.0.25",
+      "server_port": 110,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-24.pcap"
+    },
+    {
+      "scenario_id": "SECU-25",
+      "category": "Secure",
+      "protocol": "POP3",
+      "client_ip": "192.168.1.35",
+      "server_ip": "10.0.0.25",
+      "server_port": 110,
+      "expected_findings": [],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "SECU-25.pcap"
+    },
+    {
+      "scenario_id": "LEGA-01",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.36",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-01.pcap"
+    },
+    {
+      "scenario_id": "LEGA-02",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.37",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-02.pcap"
+    },
+    {
+      "scenario_id": "LEGA-03",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.38",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-03.pcap"
+    },
+    {
+      "scenario_id": "LEGA-04",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.39",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-04.pcap"
+    },
+    {
+      "scenario_id": "LEGA-05",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.40",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-05.pcap"
+    },
+    {
+      "scenario_id": "LEGA-06",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.41",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-06.pcap"
+    },
+    {
+      "scenario_id": "LEGA-07",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.42",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-07.pcap"
+    },
+    {
+      "scenario_id": "LEGA-08",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.43",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-08.pcap"
+    },
+    {
+      "scenario_id": "LEGA-09",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.44",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-09.pcap"
+    },
+    {
+      "scenario_id": "LEGA-10",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.45",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-10.pcap"
+    },
+    {
+      "scenario_id": "LEGA-11",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.46",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-11.pcap"
+    },
+    {
+      "scenario_id": "LEGA-12",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.47",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-12.pcap"
+    },
+    {
+      "scenario_id": "LEGA-13",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.48",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-13.pcap"
+    },
+    {
+      "scenario_id": "LEGA-14",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.49",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-14.pcap"
+    },
+    {
+      "scenario_id": "LEGA-15",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.50",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-15.pcap"
+    },
+    {
+      "scenario_id": "LEGA-16",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.51",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-16.pcap"
+    },
+    {
+      "scenario_id": "LEGA-17",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.52",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-17.pcap"
+    },
+    {
+      "scenario_id": "LEGA-18",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.53",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-18.pcap"
+    },
+    {
+      "scenario_id": "LEGA-19",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.54",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-19.pcap"
+    },
+    {
+      "scenario_id": "LEGA-20",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.55",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-20.pcap"
+    },
+    {
+      "scenario_id": "LEGA-21",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.56",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-21.pcap"
+    },
+    {
+      "scenario_id": "LEGA-22",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.57",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-22.pcap"
+    },
+    {
+      "scenario_id": "LEGA-23",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.58",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-23.pcap"
+    },
+    {
+      "scenario_id": "LEGA-24",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.59",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-24.pcap"
+    },
+    {
+      "scenario_id": "LEGA-25",
+      "category": "Legacy",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.60",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-001",
+        "TLS-002",
+        "TLS-003",
+        "TLS-004",
+        "TLS-005"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "LEGA-25.pcap"
+    },
+    {
+      "scenario_id": "CERT-01",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.61",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-01.pcap"
+    },
+    {
+      "scenario_id": "CERT-02",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.62",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-02.pcap"
+    },
+    {
+      "scenario_id": "CERT-03",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.63",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-03.pcap"
+    },
+    {
+      "scenario_id": "CERT-04",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.64",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-04.pcap"
+    },
+    {
+      "scenario_id": "CERT-05",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.65",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-05.pcap"
+    },
+    {
+      "scenario_id": "CERT-06",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.66",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-06.pcap"
+    },
+    {
+      "scenario_id": "CERT-07",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.67",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-07.pcap"
+    },
+    {
+      "scenario_id": "CERT-08",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.68",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-08.pcap"
+    },
+    {
+      "scenario_id": "CERT-09",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.69",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-09.pcap"
+    },
+    {
+      "scenario_id": "CERT-10",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.70",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-10.pcap"
+    },
+    {
+      "scenario_id": "CERT-11",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.71",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-11.pcap"
+    },
+    {
+      "scenario_id": "CERT-12",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.72",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-12.pcap"
+    },
+    {
+      "scenario_id": "CERT-13",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.73",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-13.pcap"
+    },
+    {
+      "scenario_id": "CERT-14",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.74",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-14.pcap"
+    },
+    {
+      "scenario_id": "CERT-15",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.75",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-15.pcap"
+    },
+    {
+      "scenario_id": "CERT-16",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.76",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-16.pcap"
+    },
+    {
+      "scenario_id": "CERT-17",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.77",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-17.pcap"
+    },
+    {
+      "scenario_id": "CERT-18",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.78",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-18.pcap"
+    },
+    {
+      "scenario_id": "CERT-19",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.79",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-19.pcap"
+    },
+    {
+      "scenario_id": "CERT-20",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.80",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-20.pcap"
+    },
+    {
+      "scenario_id": "CERT-21",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.81",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-21.pcap"
+    },
+    {
+      "scenario_id": "CERT-22",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.82",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-22.pcap"
+    },
+    {
+      "scenario_id": "CERT-23",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.83",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-23.pcap"
+    },
+    {
+      "scenario_id": "CERT-24",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.84",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-24.pcap"
+    },
+    {
+      "scenario_id": "CERT-25",
+      "category": "Certificate",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.85",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "CERT-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "CERT-25.pcap"
+    },
+    {
+      "scenario_id": "STAR-01",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.86",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-01.pcap"
+    },
+    {
+      "scenario_id": "STAR-02",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.87",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-003"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-02.pcap"
+    },
+    {
+      "scenario_id": "STAR-03",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.88",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-03.pcap"
+    },
+    {
+      "scenario_id": "STAR-04",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.89",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-003"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-04.pcap"
+    },
+    {
+      "scenario_id": "STAR-05",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.90",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-05.pcap"
+    },
+    {
+      "scenario_id": "STAR-06",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.91",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-003"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-06.pcap"
+    },
+    {
+      "scenario_id": "STAR-07",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.92",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-07.pcap"
+    },
+    {
+      "scenario_id": "STAR-08",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.93",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-003"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-08.pcap"
+    },
+    {
+      "scenario_id": "STAR-09",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.94",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-09.pcap"
+    },
+    {
+      "scenario_id": "STAR-10",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.95",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-003"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-10.pcap"
+    },
+    {
+      "scenario_id": "STAR-11",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.96",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-11.pcap"
+    },
+    {
+      "scenario_id": "STAR-12",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.97",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-003"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-12.pcap"
+    },
+    {
+      "scenario_id": "STAR-13",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.98",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-13.pcap"
+    },
+    {
+      "scenario_id": "STAR-14",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.99",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-003"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-14.pcap"
+    },
+    {
+      "scenario_id": "STAR-15",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.100",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-15.pcap"
+    },
+    {
+      "scenario_id": "STAR-16",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.101",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-003"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-16.pcap"
+    },
+    {
+      "scenario_id": "STAR-17",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.102",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-17.pcap"
+    },
+    {
+      "scenario_id": "STAR-18",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.103",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-003"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-18.pcap"
+    },
+    {
+      "scenario_id": "STAR-19",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.104",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-19.pcap"
+    },
+    {
+      "scenario_id": "STAR-20",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.105",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-003"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-20.pcap"
+    },
+    {
+      "scenario_id": "STAR-21",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.106",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-21.pcap"
+    },
+    {
+      "scenario_id": "STAR-22",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.107",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-003"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-22.pcap"
+    },
+    {
+      "scenario_id": "STAR-23",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.108",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-23.pcap"
+    },
+    {
+      "scenario_id": "STAR-24",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.109",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-003"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-24.pcap"
+    },
+    {
+      "scenario_id": "STAR-25",
+      "category": "STARTTLS/STLS",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.110",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "ST-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "STAR-25.pcap"
+    },
+    {
+      "scenario_id": "BEHA-01",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.111",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-01.pcap"
+    },
+    {
+      "scenario_id": "BEHA-02",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.112",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-02.pcap"
+    },
+    {
+      "scenario_id": "BEHA-03",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.113",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-03.pcap"
+    },
+    {
+      "scenario_id": "BEHA-04",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.114",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-04.pcap"
+    },
+    {
+      "scenario_id": "BEHA-05",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.115",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-05.pcap"
+    },
+    {
+      "scenario_id": "BEHA-06",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.116",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-06.pcap"
+    },
+    {
+      "scenario_id": "BEHA-07",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.117",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-07.pcap"
+    },
+    {
+      "scenario_id": "BEHA-08",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.118",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-08.pcap"
+    },
+    {
+      "scenario_id": "BEHA-09",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.119",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-09.pcap"
+    },
+    {
+      "scenario_id": "BEHA-10",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.120",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-10.pcap"
+    },
+    {
+      "scenario_id": "BEHA-11",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.121",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-11.pcap"
+    },
+    {
+      "scenario_id": "BEHA-12",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.122",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-12.pcap"
+    },
+    {
+      "scenario_id": "BEHA-13",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.123",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-13.pcap"
+    },
+    {
+      "scenario_id": "BEHA-14",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.124",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-14.pcap"
+    },
+    {
+      "scenario_id": "BEHA-15",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.125",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-15.pcap"
+    },
+    {
+      "scenario_id": "BEHA-16",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.126",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-16.pcap"
+    },
+    {
+      "scenario_id": "BEHA-17",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.127",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-17.pcap"
+    },
+    {
+      "scenario_id": "BEHA-18",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.128",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-18.pcap"
+    },
+    {
+      "scenario_id": "BEHA-19",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.129",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-19.pcap"
+    },
+    {
+      "scenario_id": "BEHA-20",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.130",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-20.pcap"
+    },
+    {
+      "scenario_id": "BEHA-21",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.131",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-21.pcap"
+    },
+    {
+      "scenario_id": "BEHA-22",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.132",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-22.pcap"
+    },
+    {
+      "scenario_id": "BEHA-23",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.133",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-23.pcap"
+    },
+    {
+      "scenario_id": "BEHA-24",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.134",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-24.pcap"
+    },
+    {
+      "scenario_id": "BEHA-25",
+      "category": "Behavioural",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.135",
+      "server_ip": "10.0.0.25",
+      "server_port": 587,
+      "expected_findings": [
+        "TLS-007"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "BEHA-25.pcap"
+    },
+    {
+      "scenario_id": "MALF-01",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.136",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-01.pcap"
+    },
+    {
+      "scenario_id": "MALF-02",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.137",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-02.pcap"
+    },
+    {
+      "scenario_id": "MALF-03",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.138",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-03.pcap"
+    },
+    {
+      "scenario_id": "MALF-04",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.139",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-04.pcap"
+    },
+    {
+      "scenario_id": "MALF-05",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.140",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-05.pcap"
+    },
+    {
+      "scenario_id": "MALF-06",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.141",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-06.pcap"
+    },
+    {
+      "scenario_id": "MALF-07",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.142",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-07.pcap"
+    },
+    {
+      "scenario_id": "MALF-08",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.143",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-08.pcap"
+    },
+    {
+      "scenario_id": "MALF-09",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.144",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-09.pcap"
+    },
+    {
+      "scenario_id": "MALF-10",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.145",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-10.pcap"
+    },
+    {
+      "scenario_id": "MALF-11",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.146",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-11.pcap"
+    },
+    {
+      "scenario_id": "MALF-12",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.147",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-12.pcap"
+    },
+    {
+      "scenario_id": "MALF-13",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.148",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-13.pcap"
+    },
+    {
+      "scenario_id": "MALF-14",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.149",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-14.pcap"
+    },
+    {
+      "scenario_id": "MALF-15",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.150",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-15.pcap"
+    },
+    {
+      "scenario_id": "MALF-16",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.151",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-16.pcap"
+    },
+    {
+      "scenario_id": "MALF-17",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.152",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-17.pcap"
+    },
+    {
+      "scenario_id": "MALF-18",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.153",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-18.pcap"
+    },
+    {
+      "scenario_id": "MALF-19",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.154",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-19.pcap"
+    },
+    {
+      "scenario_id": "MALF-20",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.155",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-20.pcap"
+    },
+    {
+      "scenario_id": "MALF-21",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.156",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-21.pcap"
+    },
+    {
+      "scenario_id": "MALF-22",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.157",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-22.pcap"
+    },
+    {
+      "scenario_id": "MALF-23",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.158",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-23.pcap"
+    },
+    {
+      "scenario_id": "MALF-24",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.159",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-24.pcap"
+    },
+    {
+      "scenario_id": "MALF-25",
+      "category": "Malformed",
+      "protocol": "SMTP",
+      "client_ip": "192.168.1.160",
+      "server_ip": "10.0.0.25",
+      "server_port": 25,
+      "expected_findings": [
+        "FLOW-001"
+      ],
+      "expected_confidence": "DIRECT",
+      "pcap_file": "MALF-25.pcap"
+    }
+  ]
+}

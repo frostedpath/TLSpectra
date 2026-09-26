@@ -1,0 +1,13 @@
+{
+  "scenario_id": "MALF-15",
+  "category": "Malformed",
+  "protocol": "SMTP",
+  "client_ip": "192.168.1.150",
+  "server_ip": "10.0.0.25",
+  "server_port": 25,
+  "expected_findings": [
+    "FLOW-001"
+  ],
+  "expected_confidence": "DIRECT",
+  "pcap_file": "MALF-15.pcap"
+}
