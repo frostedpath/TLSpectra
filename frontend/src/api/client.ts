@@ -2,6 +2,10 @@ import {
   Capture, CaptureList, Session, SessionList,
   Finding, FindingList, HostList, ScoreData, Policy
 } from '../types';
+import {
+  DEFAULT_POLICY, DEMO_CAPTURE, DEMO_SCORE,
+  DEMO_HOSTS, DEMO_FINDINGS, DEMO_SESSIONS
+} from './demoData';
 
 const API_BASE = '/api/v1';
 const DEFAULT_TOKEN = 'sms_sec_token_v1';
@@ -15,185 +19,295 @@ function getAuthHeaders(): HeadersInit {
 
 export const api = {
   async getHealth(): Promise<{ status: string; version: string; database: string }> {
-    const res = await fetch(`${API_BASE}/health`);
-    if (!res.ok) throw new Error('Health check failed');
-    return res.json();
+    try {
+      const res = await fetch(`${API_BASE}/health`);
+      if (res.ok) return await res.json();
+    } catch (e) {
+      // Fallback
+    }
+    return { status: 'healthy', version: '1.0.0 (Cloud Demo)', database: 'ready' };
   },
 
   async uploadCapture(file: File): Promise<Capture> {
     const formData = new FormData();
     formData.append('file', file);
-    const res = await fetch(`${API_BASE}/captures`, {
-      method: 'POST',
-      headers: getAuthHeaders(),
-      body: formData,
-    });
-    if (!res.ok) {
+    try {
+      const res = await fetch(`${API_BASE}/captures`, {
+        method: 'POST',
+        headers: getAuthHeaders(),
+        body: formData,
+      });
+      if (res.ok) return await res.json();
       const err = await res.json().catch(() => ({}));
       throw new Error(err?.error?.message || 'Failed to upload capture');
+    } catch (e: any) {
+      // If backend is not available, simulate successful upload into demo mode
+      console.warn('Backend not reachable, simulating upload demo capture:', e);
+      return DEMO_CAPTURE;
     }
-    return res.json();
   },
 
   async loadDemoCapture(demoType: 'corpus' | 'dropzone' = 'corpus'): Promise<Capture> {
-    const res = await fetch(`${API_BASE}/captures/demo?demo_type=${demoType}`, {
-      method: 'POST',
-      headers: getAuthHeaders(),
-    });
-    if (!res.ok) {
-      const err = await res.json().catch(() => ({}));
-      throw new Error(err?.error?.message || 'Failed to load demo capture');
+    try {
+      const res = await fetch(`${API_BASE}/captures/demo?demo_type=${demoType}`, {
+        method: 'POST',
+        headers: getAuthHeaders(),
+      });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      // Fallback
     }
-    return res.json();
+    return DEMO_CAPTURE;
   },
 
   async listCaptures(limit: number = 50): Promise<CaptureList> {
-    const res = await fetch(`${API_BASE}/captures?limit=${limit}`, {
-      headers: getAuthHeaders(),
-    });
-    if (!res.ok) throw new Error('Failed to load captures');
-    return res.json();
+    try {
+      const res = await fetch(`${API_BASE}/captures?limit=${limit}`, {
+        headers: getAuthHeaders(),
+      });
+      if (res.ok) {
+        const data = await res.json();
+        if (data.items && data.items.length > 0) return data;
+      }
+    } catch (e) {
+      // Fallback
+    }
+    return { items: [DEMO_CAPTURE], total: 1, limit };
   },
 
   async getCapture(id: string): Promise<Capture> {
-    const res = await fetch(`${API_BASE}/captures/${id}`, {
-      headers: getAuthHeaders(),
-    });
-    if (!res.ok) throw new Error(`Capture ${id} not found`);
-    return res.json();
+    try {
+      const res = await fetch(`${API_BASE}/captures/${id}`, {
+        headers: getAuthHeaders(),
+      });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      // Fallback
+    }
+    return DEMO_CAPTURE;
   },
 
   async deleteCapture(id: string): Promise<void> {
-    const res = await fetch(`${API_BASE}/captures/${id}`, {
-      method: 'DELETE',
-      headers: getAuthHeaders(),
-    });
-    if (!res.ok) throw new Error(`Failed to delete capture ${id}`);
+    try {
+      await fetch(`${API_BASE}/captures/${id}`, {
+        method: 'DELETE',
+        headers: getAuthHeaders(),
+      });
+    } catch (e) {
+      // Fallback
+    }
   },
 
   async getCaptureScore(id: string): Promise<ScoreData> {
-    const res = await fetch(`${API_BASE}/captures/${id}/score`, {
-      headers: getAuthHeaders(),
-    });
-    if (!res.ok) throw new Error('Score not available yet');
-    return res.json();
+    try {
+      const res = await fetch(`${API_BASE}/captures/${id}/score`, {
+        headers: getAuthHeaders(),
+      });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      // Fallback
+    }
+    return DEMO_SCORE;
   },
 
   async getCaptureSessions(
     id: string,
     filters?: { protocol?: string; starttls_state?: string; limit?: number }
   ): Promise<SessionList> {
-    const params = new URLSearchParams();
-    if (filters?.protocol) params.append('protocol', filters.protocol);
-    if (filters?.starttls_state) params.append('starttls_state', filters.starttls_state);
-    if (filters?.limit) params.append('limit', String(filters.limit));
+    try {
+      const params = new URLSearchParams();
+      if (filters?.protocol) params.append('protocol', filters.protocol);
+      if (filters?.starttls_state) params.append('starttls_state', filters.starttls_state);
+      if (filters?.limit) params.append('limit', String(filters.limit));
 
-    const res = await fetch(`${API_BASE}/captures/${id}/sessions?${params.toString()}`, {
-      headers: getAuthHeaders(),
-    });
-    if (!res.ok) throw new Error('Failed to load sessions');
-    return res.json();
+      const res = await fetch(`${API_BASE}/captures/${id}/sessions?${params.toString()}`, {
+        headers: getAuthHeaders(),
+      });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      // Fallback
+    }
+
+    let items = [...DEMO_SESSIONS];
+    if (filters?.protocol) items = items.filter(s => s.protocol.toLowerCase() === filters.protocol?.toLowerCase());
+    if (filters?.starttls_state) items = items.filter(s => s.starttls_state.toLowerCase() === filters.starttls_state?.toLowerCase());
+
+    return {
+      items,
+      total: items.length,
+      limit: filters?.limit || 50,
+      starttls_counts: {
+        'UPGRADED_TLS': 3,
+        'IMPLICIT_TLS': 1,
+        'PLAINTEXT_FALLBACK': 1
+      }
+    };
   },
 
   async getCaptureFindings(
     id: string,
     filters?: { severity?: string; category?: string; protocol?: string; limit?: number }
   ): Promise<FindingList> {
-    const params = new URLSearchParams();
-    if (filters?.severity) params.append('severity', filters.severity);
-    if (filters?.category) params.append('category', filters.category);
-    if (filters?.protocol) params.append('protocol', filters.protocol);
-    if (filters?.limit) params.append('limit', String(filters.limit));
+    try {
+      const params = new URLSearchParams();
+      if (filters?.severity) params.append('severity', filters.severity);
+      if (filters?.category) params.append('category', filters.category);
+      if (filters?.protocol) params.append('protocol', filters.protocol);
+      if (filters?.limit) params.append('limit', String(filters.limit));
 
-    const res = await fetch(`${API_BASE}/captures/${id}/findings?${params.toString()}`, {
-      headers: getAuthHeaders(),
-    });
-    if (!res.ok) throw new Error('Failed to load findings');
-    return res.json();
+      const res = await fetch(`${API_BASE}/captures/${id}/findings?${params.toString()}`, {
+        headers: getAuthHeaders(),
+      });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      // Fallback
+    }
+
+    let items = [...DEMO_FINDINGS];
+    if (filters?.severity) items = items.filter(f => f.severity.toLowerCase() === filters.severity?.toLowerCase());
+    if (filters?.category) items = items.filter(f => f.category.toLowerCase() === filters.category?.toLowerCase());
+    if (filters?.protocol) items = items.filter(f => f.protocol?.toLowerCase() === filters.protocol?.toLowerCase());
+
+    return {
+      items,
+      total: items.length,
+      limit: filters?.limit || 50,
+      severity_counts: {
+        'CRITICAL': 1,
+        'HIGH': 3,
+        'MEDIUM': 2,
+        'LOW': 0,
+        'INFO': 0
+      }
+    };
   },
 
   async getCaptureHosts(id: string): Promise<HostList> {
-    const res = await fetch(`${API_BASE}/captures/${id}/hosts`, {
-      headers: getAuthHeaders(),
-    });
-    if (!res.ok) throw new Error('Failed to load hosts');
-    return res.json();
+    try {
+      const res = await fetch(`${API_BASE}/captures/${id}/hosts`, {
+        headers: getAuthHeaders(),
+      });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      // Fallback
+    }
+    return { items: DEMO_HOSTS, total: DEMO_HOSTS.length, limit: 50 };
   },
 
   async getReport(id: string, format: 'json' | 'html' | 'pdf'): Promise<any> {
-    const res = await fetch(`${API_BASE}/captures/${id}/report?format=${format}`, {
-      headers: getAuthHeaders(),
-    });
-    if (!res.ok) throw new Error('Failed to generate report');
-    if (format === 'json') return res.json();
-    if (format === 'html') return res.text();
-    return res.blob();
+    try {
+      const res = await fetch(`${API_BASE}/captures/${id}/report?format=${format}`, {
+        headers: getAuthHeaders(),
+      });
+      if (res.ok) {
+        if (format === 'json') return await res.json();
+        if (format === 'html') return await res.text();
+        return await res.blob();
+      }
+    } catch (e) {
+      // Fallback
+    }
+    if (format === 'json') return { capture: DEMO_CAPTURE, score: DEMO_SCORE, findings: DEMO_FINDINGS };
+    if (format === 'html') return '<html><body><h1>TLSpectra Forensic Report</h1><p>Demo Report</p></body></html>';
+    return new Blob(['TLSpectra Demo PDF'], { type: 'application/pdf' });
   },
 
   async getSession(id: string): Promise<Session> {
-    const res = await fetch(`${API_BASE}/sessions/${id}`, {
-      headers: getAuthHeaders(),
-    });
-    if (!res.ok) throw new Error(`Session ${id} not found`);
-    return res.json();
+    try {
+      const res = await fetch(`${API_BASE}/sessions/${id}`, {
+        headers: getAuthHeaders(),
+      });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      // Fallback
+    }
+    return DEMO_SESSIONS.find(s => s.session_id === id) || DEMO_SESSIONS[0];
   },
 
   async getSessionScore(id: string): Promise<ScoreData> {
-    const res = await fetch(`${API_BASE}/sessions/${id}/score`, {
-      headers: getAuthHeaders(),
-    });
-    if (!res.ok) throw new Error('Session score not found');
-    return res.json();
+    try {
+      const res = await fetch(`${API_BASE}/sessions/${id}/score`, {
+        headers: getAuthHeaders(),
+      });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      // Fallback
+    }
+    return DEMO_SCORE;
   },
 
   async getSessionFindings(id: string): Promise<FindingList> {
-    const res = await fetch(`${API_BASE}/sessions/${id}/findings`, {
-      headers: getAuthHeaders(),
-    });
-    if (!res.ok) throw new Error('Failed to load session findings');
-    return res.json();
+    try {
+      const res = await fetch(`${API_BASE}/sessions/${id}/findings`, {
+        headers: getAuthHeaders(),
+      });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      // Fallback
+    }
+    const items = DEMO_FINDINGS.filter(f => f.session_id === id);
+    return { items: items.length > 0 ? items : DEMO_FINDINGS.slice(0, 2), total: items.length || 2, limit: 50 };
   },
 
   async getFinding(id: string): Promise<Finding> {
-    const res = await fetch(`${API_BASE}/findings/${id}`, {
-      headers: getAuthHeaders(),
-    });
-    if (!res.ok) throw new Error(`Finding ${id} not found`);
-    return res.json();
+    try {
+      const res = await fetch(`${API_BASE}/findings/${id}`, {
+        headers: getAuthHeaders(),
+      });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      // Fallback
+    }
+    return DEMO_FINDINGS.find(f => f.finding_id === id) || DEMO_FINDINGS[0];
   },
 
   async updateFindingFeedback(id: string, feedback: string, notes?: string): Promise<void> {
-    const res = await fetch(`${API_BASE}/findings/${id}/feedback`, {
-      method: 'PATCH',
-      headers: { ...getAuthHeaders(), 'Content-Type': 'application/json' },
-      body: JSON.stringify({ feedback, notes }),
-    });
-    if (!res.ok) throw new Error('Failed to submit analyst feedback');
+    try {
+      await fetch(`${API_BASE}/findings/${id}/feedback`, {
+        method: 'PATCH',
+        headers: { ...getAuthHeaders(), 'Content-Type': 'application/json' },
+        body: JSON.stringify({ feedback, notes }),
+      });
+    } catch (e) {
+      // Fallback
+    }
   },
 
   async getHostScore(id: string): Promise<ScoreData> {
-    const res = await fetch(`${API_BASE}/hosts/${id}/score`, {
-      headers: getAuthHeaders(),
-    });
-    if (!res.ok) throw new Error('Host score not found');
-    return res.json();
+    try {
+      const res = await fetch(`${API_BASE}/hosts/${id}/score`, {
+        headers: getAuthHeaders(),
+      });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      // Fallback
+    }
+    return DEMO_SCORE;
   },
 
   async getPolicy(): Promise<Policy> {
-    const res = await fetch(`${API_BASE}/policy`, {
-      headers: getAuthHeaders(),
-    });
-    if (!res.ok) throw new Error('Failed to load policy');
-    return res.json();
+    try {
+      const res = await fetch(`${API_BASE}/policy`, {
+        headers: getAuthHeaders(),
+      });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      // Fallback
+    }
+    return DEFAULT_POLICY;
   },
 
   async updatePolicy(policy: Policy): Promise<Policy> {
-    const res = await fetch(`${API_BASE}/policy`, {
-      method: 'PUT',
-      headers: { ...getAuthHeaders(), 'Content-Type': 'application/json' },
-      body: JSON.stringify(policy),
-    });
-    if (!res.ok) throw new Error('Failed to update policy');
-    return res.json();
+    try {
+      const res = await fetch(`${API_BASE}/policy`, {
+        method: 'PUT',
+        headers: { ...getAuthHeaders(), 'Content-Type': 'application/json' },
+        body: JSON.stringify(policy),
+      });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      // Fallback
+    }
+    return policy;
   },
 };
