@@ -5,9 +5,12 @@
 
 **SIH 2026 Problem Statement:** SIH 26159 — *AI-Assisted Cryptographic Security Posture Assessment for Secure Email Communications*  
 **Organization:** National Technical Research Organisation (NTRO)  
-**Category:** Software | Cybersecurity  
+**Category:** Software | Blockchain and Cybersecurity  
 **Team Name:** Neurolix  
 **Team ID:** 141037  
+
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-yellow?style=for-the-badge)](https://huggingface.co/spaces/frostedpath/tlspectra)  
+👉 **Live Cloud Interactive Dashboard:** [https://huggingface.co/spaces/frostedpath/tlspectra](https://huggingface.co/spaces/frostedpath/tlspectra)
 
 ---
 
@@ -27,6 +30,7 @@
 - [Verified Performance Benchmarks](#-verified-performance-benchmarks)
 - [Project Directory Structure](#-project-directory-structure)
 - [Live Service Endpoints & Telemetry](#-live-service-endpoints--telemetry)
+- [Live Cloud Preview (Hugging Face)](#-live-cloud-preview-hugging-face-spaces)
 - [Quick Start: Running Locally](#-quick-start-running-locally)
   - [Option A: Native Development (Recommended)](#option-a-native-development-recommended)
   - [Option B: Containerized Deployment (Docker Compose)](#option-b-containerized-deployment-docker-compose)
@@ -362,6 +366,19 @@ Access points:
 * **Frontend Dashboard:** `http://localhost:3000`
 * **Backend API:** `http://localhost:8000`
 * **API Documentation:** `http://localhost:8000/api/v1/docs`
+
+---
+
+### 🌐 Live Cloud Preview (Hugging Face Spaces)
+
+Experience the full interactive SOC dashboard directly in your browser without local installation or Docker:
+
+👉 **[https://huggingface.co/spaces/frostedpath/tlspectra](https://huggingface.co/spaces/frostedpath/tlspectra)**
+
+* **0–100 Cryptographic Posture Score:** Visual breakdown and deduction audit trail.
+* **Email Stream Dissection:** Full visibility into SMTP, IMAP, and POP3 handshakes and STARTTLS state transitions.
+* **160 RFC/NIST Findings:** Frame-by-frame evidence inspection and mitigation guidance.
+* **Real-time Assessment Policy:** Customizable security thresholds and scoring weights.
 
 ---
 
